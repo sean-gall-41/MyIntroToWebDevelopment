@@ -19,8 +19,8 @@
         <nav style='background-color: honeydew'> <!-- The nav element will include navigation buttons or links -->
             <hr/>
             <!-- We need to add links to projects.html, contact.html, and testimonials.html-->
-            <p><a href="projects.html"> Projects </a></p>
-            <p><a href="contact.html"> Contacts </a></p>
+            <p><a href="projects.html">Projects</a></p>
+            <p><a href="contact.html"> Contact Me </a></p>
             <p><a href="testimonials.html"> Testimonials </a></p>
             <hr/>
         </nav>
@@ -29,6 +29,20 @@
             <article id='about-me'> <!-- This is the first chunk inside the section element-->
                 <h2><em>About Me</em></h2>
                 <img src="images/personal-profile.jpg" alt="Portrait of Sean Gallogly" width="200"/>
+                <form action="null.html" method="POST"> <!-- Example of a form element -->
+                    Radio Buttons: <br/>
+                    <input type="radio" name="answer" value="YES" checked/> Yes <br/> <!-- Examples of radio input elements -->
+                    <input type="radio" name="answer" value="NO"/> No <br/>
+                    <input type="radio" name="answer" value="SOMETIMES"/> Sometimes <br/>
+                    <select name="phones" required> <!-- Example of a select element with nested option elements -->
+                        <option value="iPhoneX"> MacOS </option>
+                        <option value="GalaxyS8"> Windows </option>
+                        <option value="Nexus8" selected> Linux </option> <!-- Selected selects this element by default-->
+                    </select>
+                    <p>Enter something below: </p>
+                    <textarea name="brief-description" required></textarea> <br/>
+                    <input type="submit" value="Enter"/> <input type="reset"/> <br/> <!-- Example of a submit input element -->
+                </form>
                 <p>Sed nisi est, aliquam non gravida et, euismod id ex. <strong>Praesent molestie metus justo</strong>, non 
                     tristique nisl blandit id. Proin porta nisl eros, vitae laoreet eros vestibulum in. Integer 
                     faucibus malesuada purus quis consectetur 
@@ -41,29 +55,61 @@
             <article id='past-experiences'>
                 <h2><em>Past Experiences</em></h2>
                 <img src="images/art-museum.jpg" alt="Milwaukee Art Calatrava" width="200"/>
-                <p>Pellentesque venenatis ligula vel sem 
-                    porttitor vehicula. <span style="background-color: lightblue; border: thin sold darkblue;">Fusce lectus nibh, sollicitudin ac turpis id, aliquet
-                    sodales tellus.</span> Vivamus scelerisque varius augue, a consequant dui efficitur
-                    sodales. Maecenas sed leo varius, fringill a magna in, semper est. Aliquam non
-                    elit quis nisi ornare volutpat sed id felis.
-                </p>
-                <p>Aliquam semper urna in neque imperdiet, vel interdum sapien luctus. Morbi neque
-                    purus, volutpat eu odio at, varius malesuada purus. Sed nec auctor sem.
-                </p>
+                <table>
+                    <caption><strong>Employment History</strong></caption>
+                    <tr>
+                        <th>Years of Employment</th>
+                        <th> Title </th>
+                        <th> Company </th>
+                    </tr>
+                    <tr>
+                        <td> 2019-Present </td>
+                        <td> Apprentice </td>
+                        <td> The Softwate Guild </td>
+                    </tr>
+                    <tr>
+                        <td> 2012-2019 </td>
+                        <td> Clerk </td>
+                        <td> United Shipping Services </td>
+                    </tr>
+                    <tr>
+                        <td> 2007-2012 </td>
+                        <td> Student </td>
+                        <td> State University </td>
+                    </tr>
+                </table>                
             </article>
             
             <article id='hobbies'>
                 <h2><em>Hobbies</em></h2>
                 <img src="images/flowers-red.jpg" alt="portrait photo of red flowers" width="200"/>
-                <p>Proin posuere feugiat odio, in euismod enim scelerisque sit amet. Sed non volutpat
-                    nunc. Suspendisse potenti. Aenean ut diam scelerisque justo tempus fermentum. Quisque
-                    porta leo non laoreet ullamcorper. Sed dapibus urna sit amet arcu aommodo gravida. Morbi
-                    dictum libero dui.
-                </p>
-                <p>Fusci dignissim felis ultricies purus lobortis, non tristique urna ultrices. Curabitur
-                    ligula metus, mollis volutpat imperdiet eget, euismod ut purus. Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit. Sed finibus posuere sapien, id elementum ex mollis non.
-                </p>
+                <ul>
+                    <li> Authors </li>
+                    <ol>
+                        <li> Stephen King </li>
+                        <li> Dan Brown </li>
+                        <li> Robin Hobb </li>
+                    </ol>
+                    <li> Video Games </li>
+                    <ol>
+                        <li> Portal </li>
+                        <li> World of Warcraft </li>
+                        <li> Skyrim </li>
+                    </ol>
+                    <li> Sports </li>
+                    <ul>
+                        <li> Soccer </li>
+                        <li> Rugby </li>
+                        <li> Basketball </li>
+                    </ul>
+                    <li> Outdoor Activities </li>
+                    <ul>
+                        <li> Building sandcastles </li>
+                        <li> Pokemon hunting </li>
+                        <li> Skiing </li>
+                    </ul>
+                </ul>
+                
                 <p><a href="#top-of-page"> back to top </a></p> <!-- a bookmark to the top of the page -->
             </article>  
         </section>

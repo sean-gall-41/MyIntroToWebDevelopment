@@ -6,20 +6,105 @@
 -->
 <html lang="en">
     <head>
-        <title> Contacts </title>
+        <title> Contact Me </title>
     </head>
-
+<main>
     <body>
         <header>
-            <h1> Contacts </h1>
+            <h1> Contact Me </h1>
         </header>
 
         <nav>
-
+            <hr/>
+            <p><a href="index.html"> Home </a></p>
+            <hr/>
         </nav>
-
+        <section>
+            <h2> Information Request </h2>
+            <form action="null.html" method="POST">
+                <!--Unsure why font is red...deprecated?-->
+                <p>(<font color="red">&#42</font> indicates required field)</p> 
+                <p>
+                    <label for="first-name">First Name:<font color="red">&#42</font></label><br/>
+                    <input type="text" id="first-name" name="first-name" required/> <br/>
+                </p>
+                <p>
+                    <label for="last-name">Last Name:<font color="red">&#42</font></label><br/>
+                    <input type="text" id="last-name" name="last-name" required/> <br/>
+                </p>
+                <p>
+                    <label for="phone-number">Phone Number:<font color="red">&#42</font></label><br/>
+                    <input type="text" id="phone-number" name="phone-number" required/> <br/>
+                </p>
+                <p>
+                    <label for="best-time-to-call">Best time to call:<font color="red">&#42</font></label><br/> 
+                    <!--Want to be required, to choose not default (need a script?)-->
+                    <select id="best-time-to-contact" name="best-time-to-call">
+                        <option value="default" selected>--Select One--</option>
+                        <option value="morning">(Morning 8:00-12:00 CST)</option>
+                        <option value="Afternoon">(Afternoon 12:00-5:00 CST)</option>
+                        <option value="Evening">(Evening 5:00-8:00 CST)</option>
+                        <option value="Anytime">(Anytime)</option>
+                    </select>
+                </p>
+                <p>
+                    
+                    <fieldset >
+                        <legend>I am interested in (check all that apply):</legend>
+                        <input type="checkbox" id="front-end" name="interest" value="front-end"/>
+                        <label for="front-end">Front End Web Development</label><br/>
+                        <input type="checkbox" id="back-end" name="interest" value="back-end"/>
+                        <label for="back-end">Back End Web Development</label><br/>
+                        <input type="checkbox" id="database" name="interest" value="database"/>
+                        <label for="database">Database Design</label> <br/>
+                        <input type="checkbox" id="other" name="other" value="other" onclick="displayTextArea()"/>
+                        <label for="other">Other</label>
+                        <!--TODO: learn jQuery so you can access label associated with text area 
+                                  without having to search for it-->
+                        <label for="other-interest" style="display:none">Please specify:</label>
+                        <textarea id="other-interest" name="other-interest" style="display:none"></textarea>
+                        <script>
+                            function displayTextArea() {
+                                var checkBox = document.getElementById("other");
+                                var textArea = document.getElementById("other-interest");
+                                if (checkBox.checked == true) {
+                                    textArea.style.display = "block";
+                                    // Should write a function which obtains this OR
+                                    // falls back to searching for label if the "labels"
+                                    // attribute is not supported by the browser
+                                    textArea.labels[0].style.display = "block";
+                                } else {
+                                    textArea.style.display = "none";
+                                    textArea.labels[0].style.display = "none";
+                                }
+                            }
+                        </script>
+                        <!--TODO: implement pop-up text area if this is selected-->
+                    </fieldset>
+                </p>
+                <p>
+                    <fieldset>
+                            <legend>I have filled in the client questionnaire form:<font color="red">&#42</font></legend>
+                        <!--Interesting behavior: only one input needs to be required if both are in fieldset?-->
+                        <!--TODO: implement unchecking ability-->
+                        <input type="radio" id="choice-1" name="questionnaire" value="yes" required/> 
+                        <label for="choice-1">Yes</label><br/>
+                        <input type="radio" id="choice-2" name="questionnaire" value="No"/>
+                        <label for="choice-2">No</label><br/>
+                    </fieldset>
+                </p>
+                <p>
+                    <label for="add-info">Additional Information</label><br/>
+                    <textarea id="add-info" name="add-info"></textarea>
+                </p>
+                <input type="submit" name="submit" value="Submit"/> 
+                <!--Implement reset functionality-->
+                <input type="reset" name="reset" value="Reset"/>
+            </form>
+        </section>
         <footer>
 
         </footer>
     </body>
+</main>
 </html>
