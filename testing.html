@@ -1,0 +1,42 @@
+<!DOCTYPE hmtl>
+<html>
+<main>
+    <head>
+        <title>CSS Examples</title>
+        <!--.class means to select class #identity selects identity and element 
+            simply selects element-->
+        <style>
+            p.warning {
+                text-decoration: none;
+            }
+
+            p.warning:hover {
+                text-decoration: underline;
+            }
+
+            .warning {
+                font-weight: bold;
+                color: red;
+            }
+
+            /*Supposed to be "div.warning?" or "div .warning?"
+              Only first applies italics correctly*/
+            div.warning {
+                font-style: italic;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="warning">
+            <p>The following errors occurred:</p>
+        </div>
+        <p class="warning">First Name is required.</p>
+        <label for="first-name">First Name</label>
+        <input type="textbox" name="first-name"/>
+        <p class="warning">Last Name is required.</p>
+        <label for="last-name">Last Name</label>
+        <input type="textbox" name="last-name"/>
+    </body>
+</main>
+</html>
