@@ -7,26 +7,59 @@
 <html lang='en'>
 <head>
     <title>Sean Gallogly's Portfolio</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css"/>
+    <!--No need to remove above link, internal style sheet overwrites it-->
+    <style>
+        caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        table, th, td {
+            border: 1px solid #0d1f2d;
+            border-collapse: collapse;
+            padding: 5px 10px;
+        }
+
+        table {
+            width: 90%;
+            margin: auto;
+        }
+
+        tr {
+            height: 30px;
+        }
+
+        thead {
+            background-color: #546a7b;
+            color: #f2eded;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #e4c3ad;
+        }
+    </style>
 </head>
 
 <main>
     <body>
-        <header>
+        <header style="background-color: fuchsia">
             <h1>Portfolio for Sean Gallogly</h1>
             <p id="top-of-page"></p>
         </header>
         
-        <nav style='background-color: honeydew'> <!-- The nav element will include navigation buttons or links -->
-            <hr/>
+        <nav class="border"> <!-- The nav element will include navigation buttons or links -->
+            <hr class="nav">
             <!-- We need to add links to projects.html, contact.html, and testimonials.html-->
             <p><a href="projects.html">Projects</a></p>
             <p><a href="contact.html">Contact Me</a></p>
             <p><a href="testimonials.html">Testimonials</a></p>
-            <hr/>
+            <hr class="nav"/>
         </nav>
     
         <section> 
-            <article id='about-me'> <!-- This is the first chunk inside the section element-->
+            <article class="border" id='about-me'> <!-- This is the first chunk inside the section element-->
                 <h2><em>About Me</em></h2>
                 <img src="images/personal-profile.jpg" alt="Portrait of Sean Gallogly" width="200"/>
                 <form action="null.html" method="POST"> <!-- Example of a form element -->
@@ -55,26 +88,30 @@
                 <img src="images/art-museum.jpg" alt="Milwaukee Art Calatrava" width="200"/>
                 <table>
                     <caption><strong>Employment History</strong></caption>
-                    <tr>
-                        <th>Years of Employment</th>
-                        <th>Title</th>
-                        <th>Company</th>
-                    </tr>
-                    <tr>
-                        <td>2019-Present</td>
-                        <td>Apprentice</td>
-                        <td>The Softwate Guild</td>
-                    </tr>
-                    <tr>
-                        <td>2012-2019</td>
-                        <td>Clerk</td>
-                        <td>United Shipping Services</td>
-                    </tr>
-                    <tr>
-                        <td>2007-2012</td>
-                        <td>Student</td>
-                        <td>State University</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Years of Employment</th>
+                            <th>Title</th>
+                            <th>Company</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2019-Present</td>
+                            <td>Apprentice</td>
+                            <td>The Softwate Guild</td>
+                        </tr>
+                        <tr>
+                            <td>2012-2019</td>
+                            <td>Clerk</td>
+                            <td>United Shipping Services</td>
+                        </tr>
+                        <tr>
+                            <td>2007-2012</td>
+                            <td>Student</td>
+                            <td>State University</td>
+                        </tr>
+                    </tbody>
                 </table>                
             </article>
             
@@ -112,7 +149,7 @@
             </article>  
         </section>
         
-        <footer style='background-color: honeydew'>
+        <footer style="background-color: fuchsia">
             <hr/>
             <p>&copy;2019 Sean Gallogly. All rights reserved.</p>
         </footer>
