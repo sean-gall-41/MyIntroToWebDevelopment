@@ -55,68 +55,60 @@
             <p><a href="contact.html">Contact Me</a></p>
             <p><a href="testimonials.html">Testimonials</a></p>
             <!--<hr class="nav"/>-->
+            <div class="clear-float"></div>
         </nav>
     
         <section> 
             <article class="border" id='about-me'> <!-- This is the first chunk inside the section element-->
                 <h2><em>About Me</em></h2>
                 <img src="images/personal-profile.jpg" alt="Portrait of Sean Gallogly" width="200"/>
-                <form action="null.html" method="POST"> <!-- Example of a form element -->
-                    Radio Buttons:<br/>
-                    <input type="radio" name="answer" value="YES" checked/>Yes<br/> <!-- Examples of radio input elements -->
-                    <input type="radio" name="answer" value="NO"/>No<br/>
-                    <input type="radio" name="answer" value="SOMETIMES"/>Sometimes<br/>
-                    <select name="phones" required> <!-- Example of a select element with nested option elements -->
-                        <option value="iPhoneX">MacOS</option>
-                        <option value="GalaxyS8">Windows</option>
-                        <option value="Nexus8" selected>Linux</option> <!-- Selected selects this element by default-->
-                    </select>
-                    <p>Enter something below:</p>
-                    <textarea name="brief-description" required></textarea> <br/>
-                    <input type="submit" value="Enter"/> <input type="reset"/> <br/> <!-- Example of a submit input element -->
-                </form>
                 <p>Sed nisi est, aliquam non gravida et, euismod id ex. <strong>Praesent molestie metus justo</strong>, non 
                     tristique nisl blandit id. Proin porta nisl eros, vitae laoreet eros vestibulum in. Integer 
                     faucibus malesuada purus quis consectetur</p>
                 <p> Vivamus nec sollicitudin diam, <strong>at posuere augue</strong>. Nunc pulvinar imperdiet massa ut tincidunt.
                     Pellentesque ac tincidunt metus, nec molestie magna. <a href="">refresh</a></p>
+                <div class="clear-float"></div>
             </article>
             
             <article id='past-experiences'>
                 <h2><em>Past Experiences</em></h2>
                 <img src="images/art-museum.jpg" alt="Milwaukee Art Calatrava" width="200"/>
-                <table>
-                    <caption><strong>Employment History</strong></caption>
-                    <thead>
-                        <tr>
-                            <th>Years of Employment</th>
-                            <th>Title</th>
-                            <th>Company</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2019-Present</td>
-                            <td>Apprentice</td>
-                            <td>The Softwate Guild</td>
-                        </tr>
-                        <tr>
-                            <td>2012-2019</td>
-                            <td>Clerk</td>
-                            <td>United Shipping Services</td>
-                        </tr>
-                        <tr>
-                            <td>2007-2012</td>
-                            <td>Student</td>
-                            <td>State University</td>
-                        </tr>
-                    </tbody>
-                </table>                
+                <div class="right-content">
+                    <table>
+                        <caption><strong>Employment History</strong></caption>
+                        <thead>
+                            <tr>
+                                <th>Years of Employment</th>
+                                <th>Title</th>
+                                <th>Company</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2019-Present</td>
+                                <td>Apprentice</td>
+                                <td>The Softwate Guild</td>
+                            </tr>
+                            <tr>
+                                <td>2012-2019</td>
+                                <td>Clerk</td>
+                                <td>United Shipping Services</td>
+                            </tr>
+                            <tr>
+                                <td>2007-2012</td>
+                                <td>Student</td>
+                                <td>State University</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="clear-float"></div>                
             </article>
             
             <article id='hobbies'>
                 <h2><em>Hobbies</em></h2>
                 <img src="images/flowers-red.jpg" alt="portrait photo of red flowers" width="200"/>
+                <div class="right-content">
                 <ul>
                     <li>Authors</li>
                     <ol>
@@ -143,7 +135,8 @@
                         <li>Skiing</li>
                     </ul>
                 </ul>
-                
+                </div>
+                <div class="clear-float"></div>
                 <p><a href="#top-of-page">back to top</a></p> <!-- a bookmark to the top of the page -->
             </article>  
         </section>
