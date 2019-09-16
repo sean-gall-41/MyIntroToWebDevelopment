@@ -10,32 +10,38 @@
     <body>
         <div class="container-fluid">
             <h1>Sample</h1>
-            <form name="evens" class="form-inline">
-                
-                <div class="form-group">
-                    <label for="startNum">Starting Number</label>
-                    <input type="number" class="form-control" id="startNum">
+            <form name="evens"class="form">
+                <div class="form-group row">
+                    <label for="startNum" class="col-2 col-form-label text-right">Starting Number</label>
+                    <div class="col-sm-3">
+                        <input type="number" class="form-control" id="startNum">
+                    </div>
                 </div>
-            
-            
-                <div class="form-group">
-                    <label for="endNum">Ending Number</label>
-                    <input type="number" class="form-control" id="endNum">
+                <div class="form-group row">
+                    <label for="endNum" class="col-2 col-form-label text-right">Ending Number</label>
+                    <div class="col-sm-3">
+                        <input type="number" class="form-control" id="endNum">
+                    </div>
                 </div>
-            
-            
-                <div class="form-group">
-                    <label for="step">Step</label>
-                    <input type="number" class="form-control" id="step">
+                <div class="form-group row">
+                    <label for="step" class="col-2 col-form-label text-right">Step</label>
+                    <div class="col-sm-3">
+                        <input type="number" class="form-control" id="step">
+                    </div>
                 </div>
-            
-            
-                <button type="submit" id="displayEvens" class="btn btn-default">Display Evens</button>
-                
-            </form>
-            
+                <div class="form-group row">
+                    <div class="col-2 text-right">
+                        <button type="submit" id="submitButton" class="btn btn-primary">Display Evens</button>    
+                    </div>
+                    <div class="col-2">
+                        <button type="reset" id="resetButton" class="btn">Reset</button>
+                    </div>
+                </div>
+            </form> 
+            <p style="display:none;">Here are the even numbers between input1 and input2 by input3's:</p>
+            <!--TODO: on submit, without errors, display the above message (with custom inputs in place
+                      of inputX) and then output the even numbers, one num for each row-->
         </div>
-
         <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
