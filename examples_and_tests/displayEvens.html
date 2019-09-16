@@ -10,7 +10,7 @@
     <body>
         <div class="container-fluid">
             <h1>Sample</h1>
-            <form name="evens"class="form">
+            <form name="evens" onsubmit="return validateItems();" onreset="resetForm();" class="form">
                 <div class="form-group row">
                     <label for="startNum" class="col-2 col-form-label text-right">Starting Number</label>
                     <div class="col-sm-3">
@@ -38,9 +38,11 @@
                     </div>
                 </div>
             </form> 
-            <p style="display:none;">Here are the even numbers between input1 and input2 by input3's:</p>
-            <!--TODO: on submit, without errors, display the above message (with custom inputs in place
+            <div style="display:none;" id="result">
+                <p>Here are the even numbers between <span id="displayStartNum"></span> and <span id="displayEndNum"></span> by <span id="displayStep"></span>'s:<span id="evenNumNewLine"></span></p>
+                <!--TODO: on submit, without errors, display the above message (with custom inputs in place
                       of inputX) and then output the even numbers, one num for each row-->
+            </div>
         </div>
         <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
