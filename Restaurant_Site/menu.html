@@ -19,18 +19,29 @@
            section {
                text-align: center;
            }
-
-           h2 {
-               padding: 20px;
+           
+           #menu-page-title {
+                font-size: 2.0em;
+                font-weight: bold;
            }
 
            table.center caption {
                 color: #332f2d;
                 font-weight: bold;
+                font-size: 1.5em;
+                text-align: center;
+                caption-side: top;
+           }
+
+           .menu-item-amount {
+               font-size: 1em;
+               font-weight: normal;
            }
 
            table.center {
-               margin: 20px 10px 20px 10px;
+               width: 85%;
+               margin-left: auto;
+               margin-right: auto;
                border: 1px solid #4d391f;
            }
 
@@ -61,22 +72,26 @@
             </nav>
 
             <section>
-                <h2><em>Our Menu</em></h2>
+                <h2 id="menu-page-title">Our Menu</h2>
                 <table class="center" id="menu-food">
-                    <caption>Ramen</caption>
+                    <caption>Ramen <span role="image" aria-label="noodle-bowl">🍜</span></caption>
                     <thead>
                         <tr>
                             <th>
                                 <h3>Shio</h3>
+                                <div class="menu-item-amount">&#xa5;1000</div>
                             </th>
                             <th>
                                 <h3>Tonkotsu</h3>
+                                <div class="menu-item-amount">&#xa5;1200</div>
                             </th>
                             <th>
                                 <h3>Miso</h3>
+                                <div class="menu-item-amount">&#xa5;1100</div>
                             </th>
                             <th>
                                 <h3>Shoyu</h3>
+                                <div class="menu-item-amount">&#xa5;1000</div>
                             </th>
                         </tr>
                     </thead>
@@ -90,29 +105,33 @@
                     </tbody>
                 </table>
                 <table class="center" id="menu-beverage">
-                    <caption>Beverages</caption>
+                    <caption>Beverages <span role="image" aria-label="sake">🍶</span></caption>
                     <thead>
                         <tr>
                             <th>
+                                <h3>Tea</h3>
+                                <div class="menu-item-amount">354ml only: free water refills</div>
+                            </th>
+                            <th>
+                                <h3>Coffee</h3>
+                                <div class="menu-item-amount">237ml | 354ml | 473ml</div>
+                            </th>
+                            <th>
                                 <h3>Soda</h3>
+                                <div class="menu-item-amount">Can 354ml | bottle 473ml</div>
                             </th>
                             <th>
-                                <h3>drink 2</h3>
-                            </th>
-                            <th>
-                                <h3>drink 3</h3>
-                            </th>
-                            <th>
-                                <h3>drink 4</h3>
+                                <h3>Sake</h3>
+                                <div class="menu-item-amount">Single Tokkuri | 1.8l bottle </div>
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>$2.50</td>
-                            <td>$3.50</td>
-                            <td>$3.00</td>
-                            <td>$4.00</td>
+                            <td>&#xa5;270</td>
+                            <td>&#xa5;380 | &#xa5;430 | &#xa5;480</td>
+                            <td>&#xa5;330 | &#xa5;380</td>
+                            <td>&#xa5;430 | &#xa5;2000</td>
                         </tr>
                     </tbody>
                 </table>
