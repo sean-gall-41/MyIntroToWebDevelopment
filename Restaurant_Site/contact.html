@@ -18,41 +18,29 @@
         <!--TODO: modify to suit restaurant needs-->
         <style>
 
-            label, fieldset {
-                font-size: 1.1em;
-            }
-
-            /*Forgot had an extra paragraph... used id selector to fix that*/
-            #required {
-                font-size: 1.1em;
-            }
-
-            input[type=text] {
-                border: 2px solid #0d1f2d;
-                width: 50%;
-                padding: 8px 8px;
-                margin: 12px 0;
-                background-color: #fff7e6;
-                box-sizing: border-box;
-                font-size: 1.1em;
-            }
-
-            fieldset {
-                /*Already set background color of whole page?*/
-                background-color: #fef9ff;
-                width: 100%;
-                padding: 12px 20px;
-                margin: 12px 0;
-                box-sizing: border-box;
+            label {
+                font-size: 0.95;
             }
 
             select {
                 background-color: #fff7e6;
             }
-
-            select, textarea {
+                
+            textarea {
+                width: 100%;
+                height: 200px;
+                padding: 12px;
+                border: 1px solid #0d1f2d;
+                background-color: #fff7e6;
+            }
+            
+            input[type=text] {
+                border: 1px solid #0d1f2d;
+                width: 50%;
+                padding: 8px 8px;
                 margin: 12px 0;
-                font-size: 1em;
+                background-color: #fff7e6;
+                font-size: 1.1em;
             }
 
             input[type=submit] {
@@ -70,25 +58,13 @@
             input[type=reset] {
                 font-size: 1.2em;
                 background-color: #965232;
-                color: #fef9ff;
                 padding: 4px 8px;
+                color: #fef9ff;
             }
 
             input[type=reset]:hover {
                 background-color: #be8f78;
                 color: #fef9ff;;
-            }
-
-            textarea {
-                width: 100%;
-                height: 200px;
-                padding: 12px 20px;
-                margin: 12px 0;
-                box-sizing: border-box;
-                border: 2px solid #0d1f2d;
-                border-radius: 3px;
-                background-color: #fff7e6;
-                resize: none;
             }
 
             #requiredFieldDescription, #nameLabel, #emailLabel, #phoneLabel, #inquiryLabel {
@@ -108,9 +84,9 @@
             </header>
 
         <nav>
-            <p><a href="home.html">Home</a></p>
-            <p><a href="menu.html">Menu</a></p>
-            <p><a href="">Contact Us!</a></p>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="">Contact Us!</a>
         </nav>
 
         <section>
