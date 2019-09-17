@@ -1,0 +1,33 @@
+header, footer {
+    background-color: #d1b58a;
+    color: #332f2d;
+    font-family: 'Indie Flower', cursive;
+    height: 138px; /*TODO: alter so that footer extend to bottom of page, regardless of view*/
+    text-align: center;
+    padding: 25px 10px 25px 10px;
+}
+
+/*TODO: fix navigation*/
+
+nav {
+    border-top: 3px dashed #546a7b;
+    border-bottom: 3px dashed #546a7b;
+    margin-top: 4px;
+}
+
+nav a {
+    background-color: #5b7d87;
+    color: #fef9ff;
+    padding: 8px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    width: 100px;
+    float: left;
+}
+
+section {
+    background-color: #fdefd3;
+}

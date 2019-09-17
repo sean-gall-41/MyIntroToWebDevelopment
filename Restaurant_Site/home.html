@@ -2,42 +2,60 @@
 <!--
     Name: Sean Gallogly
     Date Created: 09/06/2019
-    Most recent revision: 09/07/2019
+    Most recent revision: 09/16/2019
 -->
 <html lang="en">
     <head>
+
+        <!--required meta tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+
         <title>Sapporo Eats! - Ramen Home</title>
+
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
+
+        <!--Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     </head>
 
-<main>
     <body>
-        <header>
-            <h1>Sapporo Eats! - Ramen</h1>
-        </header>
+        
+        <div class="container">
+            
+            <header>
+                <h1>Sapporo Eats! - Ramen</h1>
+            </header>
+    
+            <nav>
+                <p><a href="">Home</a></p>
+                <p><a href="menu.html">Menu</a></p>
+                <p><a href="contact.html">Contact Us!</a></p>
+            </nav>
+            <section>
+                <img src="images/Ramen_640.jpg" alt="Main ramen homepage image" style="display: block; margin-left:auto; margin-right:auto; width: 65%;"/>
+                <article id="restaurant-description">
+                    <h2><em>Our Story</em></h2>
+                    <p>Welcome to Sapporo Eats! - Ramen. We specialize in home-made ramen of the finest quality. 
+                       We use unique ingredients to provide you with a once in a life time experience!
+                       Etc... Etc..
+                    </p>
+                </article>
+            </section>
+            <footer>
+                <!--Based off address for Ikko Sushi in Sapporo, Hokkaido, Japan-->
+                <p>5-ch&#x14d;me-36-3 Minami 7 J&#x14d;nishi, Ch&#x16b;&#x14d;-ku, Sapporo, Hokkaido, 060-0062, Japan</p>
+                <p>+81 21-350-7839</p>
+            </footer>
+        </div>
 
-        <nav>
-            <hr/>
-            <p><a href="">Home</a></p>
-            <p><a href="menu.html">Menu</a></p>
-            <p><a href="contact.html">Contact Us!</a></p>
-            <hr/>
-        </nav>
-        <section>
-            <img src="images/Ramen_640.jpg" alt="Main ramen homepage image" width="426"/>
-            <article id="restaurant-description">
-                <h2><em>Our Story</em></h2>
-                <p>Welcome to Sapporo Eats! - Ramen. We specialize in home-made ramen of the finest quality. 
-                   We use unique ingredients to provide you with a once in a life time experience!
-                   Etc... Etc..
-                </p>
-            </article>
-        </section>
-        <footer>
-            <hr/>
-            <!--Based off address for Ikko Sushi in Sapporo, Hokkaido, Japan-->
-            <p>5-ch&#x14d;me-36-3 Minami 7 J&#x14d;nishi, Ch&#x16b;&#x14d;-ku, Sapporo, Hokkaido, 060-0062, Japan</p>
-            <p>+81 21-350-7839</p>
-        </footer>
+        <!--Optional Javascript-->
+        <!--jQuery first, then Popper.js, then Bootstrap JS-->
+        <!--CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
     </body>
-</main>
 </html>
