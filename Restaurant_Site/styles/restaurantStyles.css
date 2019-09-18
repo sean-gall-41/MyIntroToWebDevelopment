@@ -46,6 +46,13 @@ nav a:visited {
     color: #f1cdd0; 
 }
 
+/* Hack to make home icon same color as visited tabs
+   As I am not sure how Bootstrap glyphicons overwrite
+   external stylesheets within the project root */
+.oi-home {
+    color: #f1cdd0;   
+}
+
 nav a:hover {
     font-weight: bold;
 }
