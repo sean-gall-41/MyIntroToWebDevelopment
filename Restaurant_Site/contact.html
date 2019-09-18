@@ -113,54 +113,84 @@
                         <p><span id="requiredFieldDescription">Bold</span> fields required.</p>
                         <!--TODO: Get this form BOOTSTRAPPED IN. Reformat layout-->
                         <form>
-                            <p>
-                                <label for="name" id="nameLabel">Name:</label>
-                                <input type="text" id="name" name="name" required/><br/>
-                            </p>
-                            <p>
-                                <label for="email" id="emailLabel">Email:</label>
-                                <input type="text" id="email" name="email" required/><br/>
-                            </p>
-                            <p>
-                                <label for="phone" id="phoneLabel">Phone:</label>
-                                <input type="text" id="phone" name="phone" required/>
-                            </p>  
-                            <p>
-                                <label for="reason-for-inquiry" id="inquiryLabel" required>Reason for Inquiry:</label>
-                                <select id="reason-for-inquiry" name="reason-for-inquiry">
-                                    <option value="default" selected>Catering</option>
-                                    <option value="private-party">Private Party</option>
-                                    <option value="feedback">Feedback</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </p>
-                            <p>
-                                <label for="add-info">Additional Information:</label>
-                                <textarea id="add-info" name="add-info"></textarea>
-                            </p>
-                            <p>
-                                <!--Unsure if for associated with id attrib or name attrib-->
-                                <label for="questionnaire">Have you been to the restaurant?</label>
-                                <input type="radio" id="choice-1" name="questionnaire" value="No" required/>
-                                <label for="choice-1">No</label>
-                                <input type="radio" id="choice-2" name="questionnaire" value="Yes"/>
-                                <label for="choice-2">Yes</label>
-                            </p>
-                            <p>
-                                <label for="best-days-to-contact">Best days to contact you:</label>
-                                <input type="checkbox" id="M" name="best-days-to-contact" value="M"/>
-                                <label for="M">M</label>
-                                <input type="checkbox" id="T" name="best-days-to-contact" value="T"/>
-                                <label for="M">T</label>
-                                <input type="checkbox" id="W" name="best-days-to-contact" value="W"/>
-                                <label for="M">W</label>
-                                <input type="checkbox" id="Th" name="best-days-to-contact" value="Th"/>
-                                <label for="M">Th</label>
-                                <input type="checkbox" id="F" name="best-days-to-contact" value="F"/>
-                                <label for="M">F</label>
-                            </p>
-                            <input type="submit" name="send-request" value="Send Request"/>
-                            <input type="reset" name="reset-form" value="Reset Form"/>
+                            <div class="form-group row">
+                                <label for="name" id="nameLabel" class="col-2 col-form-label">Name:</label>
+                                <div class="col-10">
+                                    <input type="text" id="name" class="form-control-plaintext" name="name" required/><br/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" id="emailLabel" class="col-2 col-form-label">Email:</label>
+                                <div class="col-10">
+                                    <input type="text" id="email" class="form-control-plaintext" name="email" required/><br/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="phone" id="phoneLabel" class="col-2 col-form-label">Phone:</label>
+                                <div class="col-10">
+                                    <input type="text" id="phone" class="form-control-plaintext" name="phone" required/>
+                                </div>
+                            </div>  
+                            <div class="form-group row">
+                                <label for="reason-for-inquiry" id="inquiryLabel" class="col-2 col-form-label" required>Reason for Inquiry:</label>
+                                <div class="col-3">
+                                    <select id="reason-for-inquiry" class="form-control" name="reason-for-inquiry">
+                                        <option value="default" selected>Catering</option>
+                                        <option value="private-party">Private Party</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <label for="add-info" class="col-2 col-form-label">Additional Information:</label>
+                                </div>
+                                <!--TODO: format so fits whole page, without going over? -->
+                                <div class="row col-11">
+                                    <textarea id="add-info" class="form-control" name="add-info"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="questionnaire" class="col-2 col-form-label">Have you been to the restaurant?</label>
+                                <div class="col-2">
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-input" id="choice-1" name="questionnaire" value="No" required/>
+                                        <label for="choice-1" class="form-check-label">Yes</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-input" id="choice-2" name="questionnaire" value="Yes"/>
+                                        <label for="choice-2" class="form-check-label">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="best-days-to-contact" class="col-2 col-form-label">Best days to contact you:</label>
+                                <div class="col-10"><!--Kind of an arbitrary div for our purposes-->
+                                    <div class="form-check form-check-inline">
+                                        <input type="checkbox" id="M" class="form-check-input" name="best-days-to-contact" value="M"/>
+                                        <label for="M" class="form-check-label">M</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="checkbox" id="T" class="form-check-input" name="best-days-to-contact" value="T"/>
+                                        <label for="M" class="form-check-label">T</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="checkbox" id="W" class="form-check-input" name="best-days-to-contact" value="W"/>
+                                        <label for="M" class="form-check-label">W</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="checkbox" id="Th" class="form-check-input" name="best-days-to-contact" value="Th"/>
+                                        <label for="M" class="form-check-label">Th</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="checkbox" id="F" class="form-check-input" name="best-days-to-contact" value="F"/>
+                                        <label for="M" class="form-check-label">F</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" class="form-control" name="send-request" value="Send Request"/>
+                            <input type="reset" class="form-control" name="reset-form" value="Reset Form"/>
                         </form>
                     </section>
                 </div>
