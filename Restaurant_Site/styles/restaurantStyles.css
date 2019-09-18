@@ -9,6 +9,14 @@ header, footer {
     text-align: center;
 }
 
+.active .oi-home {
+    color: #332f2d;
+}
+
+.oi-home {
+    color: #fdefd3; 
+}
+
 .page-header {
     margin: 5px;
     padding: 10px;
