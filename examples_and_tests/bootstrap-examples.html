@@ -26,6 +26,23 @@
             nav .btn:hover {
                 font-weight: bold;
             }
+
+            .card-header {
+                background-color: #5b7d87;
+            }
+
+            .card-header .btn {
+                color: #fef9ff;
+                text-decoration: none;              
+            }
+
+            .card-header .btn:hover {
+                font-weight: 500;              
+            }
+
+            .card-header .btn:active {
+                font-style: italic;             
+            }
         </style>
 
     </head>
@@ -54,6 +71,40 @@
                     <p>Proin convallis orci at venenatis euismod. In rhoncus ligula non nibh
                         pellentesque tutrum. Nunc vel mauris diam.</p>
                 </div>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="portfolio01">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                My First Portfolio Piece
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p><a href="" target="_blank">Name of My First Website</a></p>
+                            <figure><img src="images/website-1778529.png" alt="Screenshot of first page"/></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                        <div class="card-header" id="portfolio02">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    My Second Portfolio Piece
+                                </button>
+                            </h5>
+                        </div>
+    
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p><a href="" target="_blank">Name of My Second Website</a></p>
+                                <figure><img src="images/website-1778529.png" alt="Screenshot of second page"/></figure>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
 
