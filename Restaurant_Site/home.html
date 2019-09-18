@@ -4,24 +4,23 @@
     Date Created: 09/06/2019
     Most recent revision: 09/16/2019
 -->
-
-<!--TODO: Style the page appropriately. This includes:
-        1. make the "Starting Bet" text larger
-        2. left align the starting text
-        3. style the table with a border. make
-           its size fit appropriately to the browser
--->
 <html lang="en">
     <head>
-
         <!--required meta tags-->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <title>Sapporo Eats! - Ramen Home</title>
 
         <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
         <style>
+            .jumbotron {
+                text-align: center;
+                font-family: 'Shadows Into Light', cursive;
+                margin: 25px auto 10px auto;
+            }
+            
             h2 {
                 margin-top: 25px;
                 margin-bottom: 25px;
@@ -35,46 +34,75 @@
             }
         </style>
         <!--Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
-
-    <body>
-        
-        <div class="container">
-            
-            <header>
-                <h1>Sapporo Eats! - Ramen</h1>
-            </header>
-    
-            <nav>
-                <a href="">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="contact.html">Contact Us!</a>
-            </nav>
-            <section>
-                <img src="images/Ramen_640.jpg" alt="Main ramen homepage image" style="display: block; margin-left:auto; margin-right:auto; padding: 20px; width: 65%;"/>
-                <article id="restaurant-description">
-                    <h2><em>Our Story</em></h2>
-                    <p>Welcome to Sapporo Eats! - Ramen. We specialize in home-made ramen of the finest quality. 
-                       We use unique ingredients to provide you with a once in a life time experience!
-                       Etc... Etc..
-                    </p>
-                </article>
-            </section>
-            <footer>
-                <!--Based off address for Ikko Sushi in Sapporo, Hokkaido, Japan-->
-                <p>5-ch&#x14d;me-36-3 Minami 7 J&#x14d;nishi, Ch&#x16b;&#x14d;-ku, Sapporo, Hokkaido, 060-0062, Japan</p>
-                <p>+81 21-350-7839</p>
-            </footer>
-        </div>
-
+    <div class="container">          
+        <body>
+            <div class="row">
+                <div class="col-12">
+                    <header>
+                        <div class="page-header">
+                            <h1>Sapporo Eats! - Ramen</h1>
+                        </div>
+                    </header>   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <nav>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="menu.html">Menu</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                            <h1 class="display-4">SAPPORO ➡️ AMERICA</h1>
+                            <h2 class="display-5">We're moving to America! Follow us on socials to join our journey!</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <section>
+                    <div class="column-12">
+                        <img src="images/Ramen_640.jpg" alt="Main ramen homepage image" style="display: block; margin-left:auto; margin-right:auto; padding: 20px; width: 65%;"/>
+                        <article id="restaurant-description">
+                            <h2><em>Our Story</em></h2>
+                            <p>Welcome to Sapporo Eats! - Ramen. We specialize in home-made ramen of the finest quality. 
+                               We use unique ingredients to provide you with a once in a life time experience!
+                               Etc... Etc..
+                            </p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <footer>
+                        <!--Based off address for Ikko Sushi in Sapporo, Hokkaido, Japan-->
+                        <p>5-chōme-36-3 Minami 7 Jōnishi, Chūō-ku, Sapporo, Hokkaido, 060-0062, Japan</p>
+                        <p>+81 21-350-7839</p>
+                    </footer>
+                </div>
+            </div>
+        </body>
         <!--Optional Javascript-->
         <!--jQuery first, then Popper.js, then Bootstrap JS-->
         <!--CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-    </body>
+    </div>
 </html>

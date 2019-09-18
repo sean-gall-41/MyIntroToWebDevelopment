@@ -9,11 +9,9 @@
        <!--required meta tags-->
        <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
-
        <title>Sapporo Eats! - Ramen Menu</title>
-
        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
-
+       <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
        <!--TODO: modify to fit restaurant needs-->
        <style>
            section {
@@ -54,101 +52,131 @@
            table.center, th, td {
                padding: 10px 15px 10px 15px;
            }
-
         </style>
-
        <!--Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/-->
        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1>Sapporo Eats! - Ramen</h1>
-            </header>
-
-            <nav>
-                <a href="home.html">Home</a>
-                <a href="">Menu</a>
-                <a href="contact.html">Contact Us!</a>
-            </nav>
-
-            <section>
-                <h2 id="menu-page-title">Our Menu</h2>
-                <table class="center" id="menu-food">
-                    <caption>Ramen <span role="image" aria-label="noodle-bowl">🍜</span></caption>
-                    <thead>
-                        <tr>
-                            <th>
-                                <h3>Shio</h3>
-                                <div class="menu-item-amount">&#xa5;1000</div>
-                            </th>
-                            <th>
-                                <h3>Tonkotsu</h3>
-                                <div class="menu-item-amount">&#xa5;1200</div>
-                            </th>
-                            <th>
-                                <h3>Miso</h3>
-                                <div class="menu-item-amount">&#xa5;1100</div>
-                            </th>
-                            <th>
-                                <h3>Shoyu</h3>
-                                <div class="menu-item-amount">&#xa5;1000</div>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>A description of dish 1</td>
-                            <td>A description of dish 2</td>
-                            <td>A description of dish 3</td>
-                            <td>A description of dish 4</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="center" id="menu-beverage">
-                    <caption>Beverages <span role="image" aria-label="sake">🍶</span></caption>
-                    <thead>
-                        <tr>
-                            <th>
-                                <h3>Tea</h3>
-                                <div class="menu-item-amount">354ml only: free water refills</div>
-                            </th>
-                            <th>
-                                <h3>Coffee</h3>
-                                <div class="menu-item-amount">237ml | 354ml | 473ml</div>
-                            </th>
-                            <th>
-                                <h3>Soda</h3>
-                                <div class="menu-item-amount">Can 354ml | bottle 473ml</div>
-                            </th>
-                            <th>
-                                <h3>Sake</h3>
-                                <div class="menu-item-amount">Single Tokkuri | 1.8l bottle </div>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>&#xa5;270</td>
-                            <td>&#xa5;380 | &#xa5;430 | &#xa5;480</td>
-                            <td>&#xa5;330 | &#xa5;380</td>
-                            <td>&#xa5;430 | &#xa5;2000</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <footer>
-                <!--Based off address for Ikko Sushi in Sapporo, Hokkaido, Japan-->
-                <p>5-ch&#x14d;me-36-3 Minami 7 J&#x14d;nishi, Ch&#x16b;&#x14d;-ku, Sapporo, Hokkaido, 060-0062, Japan</p>
-                <p>+81 21-350-7839</p>
-            </footer>
-        </div>
+    <div class="container">
+        <body>
+            <div class="row">
+                <div class="col">
+                    <header>
+                        <div class="page-header">
+                            <h1>Sapporo Eats! - Ramen</h1>
+                        </div>
+                    </header> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <nav>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="">Menu</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <section>
+                        <h2 id="menu-page-title">Our Menu</h2>
+                        <!--TODO: Get these tables BOOTSTRAPPED IN. Reformat layout-->
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="center" id="menu-food">
+                                    <caption>Ramen <span role="image" aria-label="noodle-bowl">🍜</span></caption>
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <h3>Shio</h3>
+                                                <div class="menu-item-amount">&#xa5;1000</div>
+                                            </th>
+                                            <th>
+                                                <h3>Tonkotsu</h3>
+                                                <div class="menu-item-amount">&#xa5;1200</div>
+                                            </th>
+                                            <th>
+                                                <h3>Miso</h3>
+                                                <div class="menu-item-amount">&#xa5;1100</div>
+                                            </th>
+                                            <th>
+                                                <h3>Shoyu</h3>
+                                                <div class="menu-item-amount">&#xa5;1000</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>A description of dish 1</td>
+                                            <td>A description of dish 2</td>
+                                            <td>A description of dish 3</td>
+                                            <td>A description of dish 4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="center" id="menu-beverage">
+                                    <caption>Beverages <span role="image" aria-label="sake">🍶</span></caption>
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <h3>Tea</h3>
+                                                <div class="menu-item-amount">354ml only: free water refills</div>
+                                            </th>
+                                            <th>
+                                                <h3>Coffee</h3>
+                                                <div class="menu-item-amount">237ml | 354ml | 473ml</div>
+                                            </th>
+                                            <th>
+                                                <h3>Soda</h3>
+                                                <div class="menu-item-amount">Can 354ml | bottle 473ml</div>
+                                            </th>
+                                            <th>
+                                                <h3>Sake</h3>
+                                                <div class="menu-item-amount">Single Tokkuri | 1.8l bottle </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>&#xa5;270</td>
+                                            <td>&#xa5;380 | &#xa5;430 | &#xa5;480</td>
+                                            <td>&#xa5;330 | &#xa5;380</td>
+                                            <td>&#xa5;430 | &#xa5;2000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <footer>    
+                        <!--Based off address for Ikko Sushi in Sapporo, Hokkaido, Japan-->
+                        <p>5-chōme-36-3 Minami 7 Jōnishi, Chūō-ku, Sapporo, Hokkaido, 060-0062, Japan</p>
+                        <p>+81 21-350-7839</p>
+                    </footer>
+                </div>
+            </div>
+        </body>
         <!--Optional Javascript-->
         <!--jQuery first, then Popper.js, then Bootstrap JS-->
         <!--CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </body>
+    </div>
 </html>

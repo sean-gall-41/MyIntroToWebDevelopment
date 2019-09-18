@@ -1,11 +1,17 @@
 header, footer {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Shadows Into Light', cursive;
     background-color: #d1b58a;
     color: #332f2d;
     margin-top: 10px;
+    border:thin solid #d8aa95;
     padding: 25px 10px 25px 10px;
     height: 138px; /*TODO: alter so that footer extend to bottom of page, regardless of view*/
     text-align: center;
+}
+
+.page-header {
+    margin: 5px;
+    padding: 10px;
 }
 
 /*TODO: fix navigation*/
@@ -13,14 +19,12 @@ header, footer {
 nav {
     margin-top: 5px;
     margin-bottom: 5px;
-    border-top: 1.5px solid #866335;
-    border-bottom: 1.5px solid #866335;
-    height: 45px;
+    height: 50px;
 }
 
 nav a {
-    font-family: 'Indie Flower', cursive;
-    background-color: #965232;
+    font-family: 'Shadows Into Light', cursive;
+    background-color: #c2734e;
     color: #fef9ff;
     text-align: center;
     margin: 4px;
@@ -31,20 +35,21 @@ nav a {
 }
 
 nav a:visited {
-    color: #eeded2; 
+    color: #f1cdd0; 
 }
 
 nav a:hover {
     font-weight: bold;
 }
 
-nav a:active {
-    text-decoration: none;    
-}
+/* nav a:active {
+    font-style: italic;  
+} */
 
 section {
     background-color: #fdefd3;
     color: #332f2d;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Shadows Into Light', cursive;
     margin: 10px auto 10px auto;
+    border:thin solid #68361e;
 }
