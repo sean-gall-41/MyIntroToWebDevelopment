@@ -35,8 +35,18 @@
                 caption-side: top;
            }
 
+           #ramen-description {
+               font-size: 1.2em;
+               font-weight: normal;
+           }
+
            .menu-item-amount {
-               font-size: 1em;
+               font-size: 1.3em;
+               font-weight: normal;
+           }
+
+           .menu-item-description {
+               font-size: 1.1em;
                font-weight: normal;
            }
 
@@ -56,6 +66,11 @@
            table.center, th, td {
                padding: 10px 15px 10px 15px;
            }
+
+           #menu-beverage {
+               margin: 20px auto 25px auto;
+           }
+
         </style>
        <!--Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/-->
        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -97,7 +112,8 @@
                         <div class="row">
                             <div class="col-12">
                                 <table class="center" id="menu-food">
-                                    <caption>Ramen <span role="image" aria-label="noodle-bowl">🍜</span></caption>
+                                    <caption id="ramen-table-title" style="margin-bottom: 0px; padding-bottom: 0px;">Ramen <span role="image" aria-label="noodle-bowl">🍜</span></caption>
+                                    <caption id="ramen-description" style="margin-top: 0px; padding-top: 0px;">all ramen served in 750ml bowl with Nori, pork, boiled eggs, Kamaboko, and Menma</caption>
                                     <thead>
                                         <tr>
                                             <th>
@@ -120,10 +136,27 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>A description of dish 1</td>
-                                            <td>A description of dish 2</td>
-                                            <td>A description of dish 3</td>
-                                            <td>A description of dish 4</td>
+                                            <td>
+                                                <div class="menu-item-description">
+                                                    Light, salt-based soup broth. The traditional ramen flavoring. ~400kcal
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="menu-item-description">
+                                                    Pork bone-based soup broth. Contains soy and salt. Very dark in color ~600kcal
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="menu-item-description">
+                                                    Miso-based broth from Hokkaido-sourced soy beans. Very full, savory flavor ~550kcal
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="menu-item-description">
+                                                    Soy sauce-based broth. Flavored with freshly caught herring ~475 kcal
+                                                </div>
+                                            </td>
+
                                         </tr>
                                     </tbody>
                                 </table>
@@ -137,28 +170,43 @@
                                         <tr>
                                             <th>
                                                 <h3>Tea</h3>
-                                                <div class="menu-item-amount">354ml only: free water refills</div>
+                                                <div class="menu-item-description">354ml only: free water refills</div>
                                             </th>
                                             <th>
                                                 <h3>Coffee</h3>
-                                                <div class="menu-item-amount">237ml | 354ml | 473ml</div>
+                                                <div class="menu-item-description">237ml | 354ml | 473ml</div>
                                             </th>
                                             <th>
                                                 <h3>Soda</h3>
-                                                <div class="menu-item-amount">Can 354ml | bottle 473ml</div>
+                                                <div class="menu-item-description">Can 354ml | bottle 473ml</div>
                                             </th>
                                             <th>
-                                                <h3>Sake</h3>
-                                                <div class="menu-item-amount">Single Tokkuri | 1.8l bottle </div>
+                                                <h3>House Sake</h3>
+                                                <div class="menu-item-description">Single Tokkuri | 1.8l bottle </div>
+                                            </th>
+                                            <th>
+                                                <h3>NEW: Meiji Sake</h3>
+                                                <div class="menu-item-description">Single Tokkuri Only</div>
                                             </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>&#xa5;270</td>
-                                            <td>&#xa5;380 | &#xa5;430 | &#xa5;480</td>
-                                            <td>&#xa5;330 | &#xa5;380</td>
-                                            <td>&#xa5;430 | &#xa5;2000</td>
+                                            <td>
+                                                <div class="menu-item-amount">&#xa5;270</div>
+                                            </td>
+                                            <td>
+                                                <div class="menu-item-amount">&#xa5;380 | &#xa5;430 | &#xa5;480</div>
+                                            </td>
+                                            <td>
+                                                <div class="menu-item-amount">&#xa5;330 | &#xa5;380</div>
+                                            </td>
+                                            <td>
+                                                <div class="menu-item-amount">&#xa5;430 | &#xa5;2000</div>
+                                            </td>
+                                            <td>
+                                                <div class="menu-item-amount">&#xa5;730</div>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -171,7 +219,7 @@
                 <div class="col-12">
                     <footer>    
                         <!--Based off address for Ikko Sushi in Sapporo, Hokkaido, Japan-->
-                        <p>5-chōme-36-3 Minami 7 Jōnishi, Chūō-ku, Sapporo, Hokkaido, 060-0062, Japan</p>
+                        <p>5-chome-36-3 Minami 7 Jonishi, Chuo-ku, Sapporo, Hokkaido, 060-0062, Japan</p>
                         <p>+81 21-350-7839</p>
                     </footer>
                 </div>
