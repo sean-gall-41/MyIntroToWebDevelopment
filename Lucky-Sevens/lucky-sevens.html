@@ -8,46 +8,53 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">         
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <h1>Lucky Sevens</h1>
             <form name="startBet" onsubmit="return validateItems();" onreset="resetForm();" class="form">
                 <div class="form-group row">
-                    <label for="placeBet" class="col-2 col-form-label text-right">Starting Bet:</label>
-                    <div class="col-2 text-right">
+                    <label for="placeBet" class="col-sm-2 col-md-1 col-lg-1 col-form-label text-center">Starting Bet:</label>
+                    <div class="col-sm-2 col-md-2 col-lg-1">
                         <input type="number" class="form-control" id="placeBet">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <div class="col-2 text-right">
+                    <div class="col-sm-3 col-md-3 col-lg-2 text-center">
                         <button type="submit" id="play" class="btn btn-primary">Play</button>
                     </div>
-                    <div class="col-10">
+                    <!-- <div class="col-sm-2 col-md-2 col-lg-1">
                             <button type="reset" id="reset" class="btn">Reset All</button>
-                    </div>
+                    </div> -->
                 </div>
             </form>
-            <table id="results" class="table table-striped" style="display:none;">
-                <!--TODO: write scripts to display numbers in table-->
-                <!--TODO: format table to not take up entire page-->
-                <tbody>
-                    <tr>
-                        <td>Starting Bet</td>
-                        <td>$<span id="startBetTable"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Total Rolls Before Going Broke</td>
-                        <td><span id="totalRollsTable"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Highest Amount Won</td>
-                        <td><span id="maxWonTable"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Roll Count At Highest Amount Won</td>
-                        <td><span id="countAtHighestTable"></span></td>
-                    </tr>
-                </tbody>
-            </table>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <table id="results" class="table table-striped" style="display: none;">
+                        <caption style="text-align: center; caption-side: top; color:black; border-top: thin solid black;"><h1>Results</h1></caption>
+                        <!--TODO: write scripts to display numbers in table-->
+                        <!--TODO: format table to not take up entire page-->
+                        <tbody>
+                            <tr>
+                                <td>Starting Bet</td>
+                                <td>$<span id="startBetTable"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Total Rolls Before Going Broke</td>
+                                <td><span id="totalRollsTable"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Highest Amount Won</td>
+                                <td><span id="maxWonTable"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Roll Count At Highest Amount Won</td>
+                                <td><span id="countAtHighestTable"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
 
         <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
