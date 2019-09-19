@@ -1,3 +1,10 @@
+/*  filename: contact.js
+ *  Name: Sean Gallogly
+ *  Date Created: 09/17/2019
+ *  Most recent revision: 09/19/2019
+ */
+
+
 /* This function loops through each form element and checks whether the parent of the parent
  * of the element has a class name with "has-" in it, indicating an error flag has been set 
  * in the class name. We use parentElement of the parentElement of the element as we have each

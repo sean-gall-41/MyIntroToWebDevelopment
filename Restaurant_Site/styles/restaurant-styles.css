@@ -1,3 +1,8 @@
+/*  filename: restaurant-styles.css
+ *  Name: Sean Gallogly
+ *  Date Created: 09/14/2019
+ *  Most recent revision: 09/19/2019
+ */
 header, footer {
     font-family: 'Shadows Into Light', cursive;
     background-color: #d1b58a;
@@ -5,7 +10,7 @@ header, footer {
     margin-top: 10px;
     border:thin solid #d8aa95;
     padding: 25px 10px 25px 10px;
-    height: 138px; /*TODO: alter so that footer extend to bottom of page, regardless of view*/
+    height: 138px; 
     text-align: center;
 }
 
@@ -29,8 +34,6 @@ footer p {
     margin: 5px;
     padding: 10px;
 }
-
-/*TODO: fix navigation*/
 
 nav {
     margin-top: 5px;
@@ -64,10 +67,6 @@ nav a:visited {
 nav a:hover {
     font-weight: bold;
 }
-
-/* nav a:active {
-    font-style: italic;  
-} */
 
 section {
     background-color: #fdefd3;
