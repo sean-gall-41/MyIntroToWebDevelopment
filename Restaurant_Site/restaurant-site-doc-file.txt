@@ -3,15 +3,6 @@ be done.
 
     
     contact.html
-        - make the form labels consistent across all labels. Ensure size and style jives with form preamble
-        - match color and style of select and textarea to text inputs (including border, rounded corners)
-        - make text area symmetric with section border, or push to left side, allow the size to increase
-            dynamically by including scrollbar when user text overflows. Then add an image or something on
-            right hand side to fill in empty space
-        - vertically align text input with select input 
-        - play with the section header and footer margins
-        - IF HAVE TIME: add default option to select input that displays onload. Then validate user has changed
-            from default in script file
         - IF HAVE TIME: If user selects other in questionnaire, then make a text area appear, which is formatted 
             similarly to additional information box
     

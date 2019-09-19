@@ -1,18 +1,12 @@
 /* This function loops through each form element and checks whether the parent of the parent
  * of the element has a class name with "has-" in it, indicating an error flag has been set 
  * in the class name. We use parentElement of the parentElement of the element as we have each
- * element encapsulated within form group divs. Notice that one of the elements has a different
- * doubley nested parent element class name, for the sake of styling, and we thus have to reset 
- * it to its proper value.
+ * element encapsulated within form group divs.
  */
 function clearErrors() {
     for (var i = 0; i < document.forms["contact-form"].elements.length; i++) {
-        if (document.forms["contact-form"].elements[i].parentElement.parentElement.className.indexOf("has-") != -1) {
-            if (document.forms["contact-form"].elements[i].id == "add-info") {
-                document.forms["contact-form"].elements[i].parentElement.parentElement.className = "form-group";
-            } else {
-                document.forms["contact-form"].elements[i].parentElement.parentElement.className = "form-group row";
-            } 
+        if (document.forms["contact-form"].elements[i].parentElement.parentElement.className.indexOf("has-") != -1) { 
+            document.forms["contact-form"].elements[i].parentElement.parentElement.className = "form-group row";
         }
     }
 }
@@ -24,7 +18,11 @@ function clearErrors() {
 function resetForm() {
     clearErrors();
     for (var i=0; i < document.forms["contact-form"].elements.length; i++) {
-        document.forms["contact-form"].elements[i].value = "";
+        if (document.forms["contact-form"].elements[i].id == "reason-for-inquiry") {
+            document.forms["contact-form"].elements[i].value = "select-one";    
+        } else {
+            document.forms["contact-form"].elements[i].value = "";
+        }
     }
     document.forms["contact-form"]["name"].focus();
 }
@@ -92,6 +90,16 @@ function validateItems() {
         document.forms["contact-form"]["phone"].focus();
         return false;
     }
+
+    if (document.forms["contact-form"]["reason-for-inquiry"].value == "select-one") {
+        alert("Please specify the reason for your inquiry");
+        document.forms["contact-form"]["reason-for-inquiry"].parentElement.parentElement = "form-group row has-error";
+        document.forms["contact-form"]["reason-for-inquiry"].focus();
+        return false;
+    }
+    // If user data successfully passes above tests, give alert them of success
     alert("Congratulations! Your information has been sent and we will get back to you shortly.");
+    // In a real form, all the info should be cleared after it has been submitted, for privacy
+    resetForm();
     return false;
 }
