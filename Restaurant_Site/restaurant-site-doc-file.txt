@@ -1,0 +1,42 @@
+This file is meant to give a precise listing of what is done and what must
+be done.
+
+TODO:
+
+    home.html
+        - make the jumbotron size well with window size NO STACKING
+        - change jumbotron color
+        - tweak jumbotron, carousel, and section and header and footer margins
+        - Tweak carousel card titles to keep their size in relation to the card
+            background when window size changes: match fullsize look with half screen
+            look
+            - center new beverages card title, add background with border
+        - increase section paragraph text font, tweak heading font
+        - add meaningful description of the restaurant. keep it cool. keep it concise.
+        - increase header font size, style font to POP
+        - increase footer text size, ensure proper rendering of special macron characters
+            ('ō' and 'ū')
+    
+    menu.html
+        - add padding and or margin to bottom of beverage menu
+        - style text to better fit the feel of the page. (increase font of menu item descriptions)
+        - add the new beverage item to the drink menu. (IF HAVE TIME: add NEW icon or image)
+    
+    contact.html
+        - make the form labels consistent across all labels. Ensure size and style jives with form preamble
+        - match color and style of select and textarea to text inputs (including border, rounded corners)
+        - make text area symmetric with section border, or push to left side, allow the size to increase
+            dynamically by including scrollbar when user text overflows. Then add an image or something on
+            right hand side to fill in empty space
+        - vertically align text input with select input 
+        - play with the section header and footer margins
+        - IF HAVE TIME: add default option to select input that displays onload. Then validate user has changed
+            from default in script file
+        - IF HAVE TIME: If user selects other in questionnaire, then make a text area appear, which is formatted 
+            similarly to additional information box
+    
+    restaurant-styles.css
+        - Dependent on the above (will have to change header and footer styles)
+
+    contact.js
+        - Depends on contact.html: if add a default option to select input area
