@@ -80,7 +80,13 @@ function validateItems() {
         document.forms["contact-form"]["email"].parentElement.parentElement = "form-group row has-error";
         document.forms["contact-form"]["email"].focus();
         return false;
-    } if (!validPhoneNumber(userPhone)) {
+    }
+    if (userPhone == "") {
+        alert("Please enter a phone number so we may get back to you!");
+        document.forms["contact-form"]["phone"].parentElement.parentElement = "form-group row has-error";
+        document.forms["contact-form"]["phone"].focus();
+        return false;
+    } else if (!validPhoneNumber(userPhone)) {
         alert("Please enter a valid phone number");
         document.forms["contact-form"]["phone"].parentElement.parentElement = "form-group row has-error";
         document.forms["contact-form"]["phone"].focus();
