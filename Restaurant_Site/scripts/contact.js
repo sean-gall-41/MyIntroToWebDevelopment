@@ -27,6 +27,21 @@ function resetForm() {
     document.forms["contact-form"]["name"].focus();
 }
 
+
+/* This function toggles the visibility of the 'please specify' text area, 
+ * dependent on if 'other' is selected in the select element immediately above.
+ */
+function selectChange() {
+    var selectBox = document.getElementById("reason-for-inquiry");
+    var selected = selectBox.value;
+    var textArea = document.getElementById("display-if-selected");
+    if (selected == "other") {
+        textArea.style.display = "";
+    } else {
+        textArea.style.display = "none";
+    }
+}
+
 /* This function checks whether the user has entered a phone number in 
  * one of the following formats:
  *   
@@ -90,12 +105,19 @@ function validateItems() {
         document.forms["contact-form"]["phone"].focus();
         return false;
     }
-
     if (document.forms["contact-form"]["reason-for-inquiry"].value == "select-one") {
         alert("Please specify the reason for your inquiry");
         document.forms["contact-form"]["reason-for-inquiry"].parentElement.parentElement = "form-group row has-error";
         document.forms["contact-form"]["reason-for-inquiry"].focus();
         return false;
+    }
+    if (document.forms["contact-form"]["reason-for-inquiry"].value == "other") {
+        if (document.getElementById("specify").value == "") {
+            alert("If you have entered 'other' in the reason for inquiry, you must specify the reason.");
+            document.forms["contact-form"]["specify"].parentElement.parentElement = "form-group row has-error";
+            document.forms["contact-form"]["specify"].focus();
+            return false;
+        }
     }
     // If user data successfully passes above tests, give alert them of success
     alert("Congratulations! Your information has been sent and we will get back to you shortly.");

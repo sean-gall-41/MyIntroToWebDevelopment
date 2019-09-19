@@ -2,12 +2,4 @@ This file is meant to give a precise listing of what is done and what must
 be done.
 
     
-    contact.html
-        - IF HAVE TIME: If user selects other in questionnaire, then make a text area appear, which is formatted 
-            similarly to additional information box
-    
-    restaurant-styles.css
-        - Dependent on the above (will have to change header and footer styles)
-
-    contact.js
-        - Depends on contact.html: if add a default option to select input area
+    All is complete.

@@ -150,9 +150,9 @@
                                 </div>
                             </div>  
                             <div class="form-group row">
-                                <label for="reason-for-inquiry" id="reason-for-label-inquiry-label" class="col-sm-2 col-form-label required-in-bold text-center" required>Reason for Inquiry:</label>
+                                <label for="reason-for-inquiry" id="reason-for-label-inquiry-label" class="col-sm-2 col-form-label required-in-bold text-center">Reason for Inquiry:</label>
                                 <div class="col-sm-2">
-                                    <select id="reason-for-inquiry" class="form-control" name="reason-for-inquiry" style="text-align-last: center; border: 1px solid #0d1f2d; background-color: #fff7e6">
+                                    <select id="reason-for-inquiry" class="form-control" name="reason-for-inquiry" onchange="selectChange();" style="text-align-last: center; border: 1px solid #0d1f2d; background-color: #fff7e6">
                                         <optgroup>
                                             <option value="select-one" selected>--Select One--</option>
                                             <option value="catering">Catering</option>
@@ -163,11 +163,11 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="form-group row" style="display: none;">
+                            <div id="display-if-selected" class="form-group row" style="display: none;">
                                 <label for="specify" id="specify-label" class="col-sm-2 col-form-label required-in-bold text-center">Please Specify:</label>
-                                    <div class="col-sm-4">
-                                        <textarea id="specify" class="form-control" name="specify" style="font-size: 1.3em; border: 1px solid #0d1f2d; background-color: #fff7e6"></textarea>
-                                    </div>
+                                <div class="col-sm-4">
+                                    <textarea id="specify" class="form-control" name="specify" style="font-size: 1.3em; border: 1px solid #0d1f2d; background-color: #fff7e6"></textarea>
+                                </div>
                                 </div>
                             <div class="form-group row">
                                 <label for="add-info" id="add-info-label" class="col-sm-2 col-form-label text-center">Additional Information:</label>
