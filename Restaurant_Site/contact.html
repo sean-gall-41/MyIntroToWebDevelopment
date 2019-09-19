@@ -13,6 +13,7 @@
 
         <title>Sapporo Eats! - Contact Us</title>
 
+        <script type="text/javascript" src="scripts/contact.js"></script>
         <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css"/>
         <link href="libs/open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
@@ -154,23 +155,23 @@
                             <div class="form-group row">
                                 <label for="name" class="col-1 col-form-label required-in-bold text-center">Name:</label>
                                 <div class="col-6">
-                                    <input type="text" id="name" class="form-control-plaintext" name="name" required/><br/>
+                                    <input type="text" id="name" class="form-control-plaintext" name="name"/><br/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="email" class="col-1 col-form-label required-in-bold text-center">Email:</label>
                                 <div class="col-6">
-                                    <input type="text" id="email" class="form-control-plaintext" name="email" required/><br/>
+                                    <input type="text" id="email" class="form-control-plaintext" name="email"/><br/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="phone" class="col-1 col-form-label required-in-bold text-center">Phone:</label>
                                 <div class="col-6">
-                                    <input type="text" id="phone" class="form-control-plaintext" name="phone" required/>
+                                    <input type="text" id="phone" class="form-control-plaintext" name="phone"/>
                                 </div>
                             </div>  
                             <div class="form-group row">
-                                <label for="reason-for-inquiry" class="col-2 col-form-label required-in-bold text-center" required>Reason for Inquiry:</label>
+                                <label for="reason-for-inquiry" id="reason-for-label-inquiry-label" class="col-2 col-form-label required-in-bold text-center" required>Reason for Inquiry:</label>
                                 <div class="col-3">
                                     <select id="reason-for-inquiry" class="form-control" name="reason-for-inquiry">
                                         <option value="default" selected>Catering</option>
@@ -182,7 +183,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="row">
-                                    <label for="add-info" class="col-2 col-form-label text-center">Additional Information:</label>
+                                    <label for="add-info" id="add-info-label" class="col-2 col-form-label text-center">Additional Information:</label>
                                 </div>
                                 <!--TODO: format so fits whole page, without going over? -->
                                 <div class="row col-11">
@@ -190,45 +191,45 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="questionnaire" class="col-2 col-form-label text-center">Have you been to the restaurant?</label>
+                                <label for="questionnaire" id="questionnaire-label" class="col-2 col-form-label text-center">Have you been to the restaurant?</label>
                                 <div class="col-2">
                                     <div class="form-check-inline">
-                                        <input type="radio" class="form-check-input" id="choice-1" name="questionnaire" value="No" required/>
-                                        <label for="choice-1" class="form-check-label">Yes</label>
+                                        <input type="radio" class="form-check-input" id="choice-1" name="questionnaire" value="No"/>
+                                        <label for="choice-1" id="choice-1-label" class="form-check-label">Yes</label>
                                     </div>
                                     <div class="form-check-inline">
                                         <input type="radio" class="form-check-input" id="choice-2" name="questionnaire" value="Yes"/>
-                                        <label for="choice-2" class="form-check-label">No</label>
+                                        <label for="choice-2" id="choice-2-label" class="form-check-label">No</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="best-days-to-contact" class="col-2 col-form-label text-center">Best days to contact you:</label>
+                                <label for="best-days-to-contact" id="best-days-to-contact-label" class="col-2 col-form-label text-center">Best days to contact you:</label>
                                 <div class="col-10"><!--Kind of an arbitrary div for our purposes-->
                                     <div class="form-check form-check-inline">
                                         <input type="checkbox" id="M" class="form-check-input" name="best-days-to-contact" value="M"/>
-                                        <label for="M" class="form-check-label">M</label>
+                                        <label for="M" id="M-label" class="form-check-label">M</label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input type="checkbox" id="T" class="form-check-input" name="best-days-to-contact" value="T"/>
-                                        <label for="M" class="form-check-label">T</label>
+                                        <label for="M" id="T-label" class="form-check-label">T</label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input type="checkbox" id="W" class="form-check-input" name="best-days-to-contact" value="W"/>
-                                        <label for="M" class="form-check-label">W</label>
+                                        <label for="M" id="W-label" class="form-check-label">W</label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input type="checkbox" id="Th" class="form-check-input" name="best-days-to-contact" value="Th"/>
-                                        <label for="M" class="form-check-label">Th</label>
+                                        <label for="M" id="Th-label" class="form-check-label">Th</label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input type="checkbox" id="F" class="form-check-input" name="best-days-to-contact" value="F"/>
-                                        <label for="M" class="form-check-label">F</label>
+                                        <label for="M" id="F-label" class="form-check-label">F</label>
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-lg" name="send-request">Send Request</button>
-                            <button type="reset" class="btn btn-lg" name="reset-form">Reset Form</button>
+                            <button type="submit" id="send-request-btn" class="btn btn-lg" name="send-request">Send Request</button>
+                            <button type="reset" id="reset-form-btn" class="btn btn-lg" name="reset-form">Reset Form</button>
                         </form>
                     </section>
                 </div>
